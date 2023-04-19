@@ -20,9 +20,9 @@ t0 = int(input("Enter initial time : "))
 tf = int(input("Enter final time : "))
 
 # Define the equation of motion at a time "t"
-x = 3*t
-y = 4**t
-z = 5*sp.tan(t)
+x = 7*t*t
+y = 13*t*t
+z = 8*sp.tan(t)
 
 # Define the velocity at a time "t"
 Vx = sp.diff(x,t)
@@ -31,15 +31,15 @@ Vz = sp.diff(z,t)
 
 # Define the functions for the respective equation of motion and velocities
 def X(t):
-    x = 3*t
+    x = 7*t*t
     return x
 
 def Y(t):
-    y = 4**t
+    y = 13*t*t
     return y
 
 def Z(t):
-    z = 5*np.tan(t)
+    z = 8*sp.tan(t)
     return z
 
 def VX (T):
