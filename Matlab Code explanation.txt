@@ -1,0 +1,15 @@
+The code begins by clearing any existing variables and command window by using the "clc" and "clearvars" commands.
+
+The next few lines of code define the initial position and orientation of the unmanned aerial vehicle (UAV) and the initial direction of the antenna. These values are obtained from user input.
+
+The code then defines the initial and final time and the step size. The linspace function is used to create a vector of values from t0 to tf with a step size of dt.
+
+Next, the code defines the equations of motion for the UAV in terms of the variable 't' using anonymous functions. The position of the UAV is calculated using these equations.
+
+The code then calculates the velocity of the UAV at each time step using the "diff" function.
+
+The polar coordinates of the UAV are calculated using the position of the UAV. The azimuthal and altitudinal angles moved by the antenna are then calculated by subtracting the initial angles of the antenna from the final angles of the antenna.
+
+The code then calculates the angular velocities of the antenna in the direction of the azimuthal and altitudinal angles.
+
+Finally, the code displays the final position and velocity of the UAV and the final azimuthal and altitudinal angles of the antenna along with their corresponding angular velocities.
